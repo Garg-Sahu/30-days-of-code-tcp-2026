@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inter NIT Trial Events Schedule</h1>
+    <table border="1">
+        <tr>
+            <th>Sports</th>
+            <th>Timing</th>
+            <th>Venue</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>Cricket</td>
+            <td>6:00AM</td>
+            <td>Sports Ground</td>
+            <td>5 Jan</td>
+        </tr>
+        <tr>
+            <td>Chess</td>
+            <td>5:00PM</td>
+            <td>Sports Complex</td>
+            <td>6 Jan</td>
+        </tr>
+        <tr>
+            <td>Basketball</td>
+            <td>4:00PM</td>
+            <td>Basket ball court</td>
+            <td>7 Jan</td>
+        </tr>
+    </table>
+</body>
+<h1>Registration Form:</h1>
+<form action="/action.php" method="post">
+    1.<b>Name:-</b><input type="text" placeholder="Enter Name">
+    <br>
+    <br>
+    2..<b>Email:-</b><input type="email" placeholder="Enter Email">
+    <br><br>
+    3..<b>Phone number:-</b><input type="number" placeholder="Enter phone number">
+
+
+    <br>
+    <br>
+    4.<b>Enter year: </b> <br><br>
+    <label for="101">
+        <input type="radio" value="1st year" class="year" >1st year
+     </label>
+     <label for="101">
+        <input type="radio" value="2nd year" class="year" >2nd year
+     </label>
+     <label for="101">
+        <input type="radio" value="3rd year" class="year" >3rd year
+     </label>
+     <label for="101">
+        <input type="radio" value="4th year" class="year" >4th year
+     </label>
+     <br>
+     <br>
+     5.<b>Select sports to participate:</b>
+     <br>
+     <br>
+     <label for="Cricket">
+        <input type="checkbox">Cricket
+     </label>
+     <label for="Chess">
+        <input type="checkbox">Chess
+     </label>
+     <label for="Basketball">
+        <input type="checkbox">Basketball
+     </label>
+    <h3>Add comments:</h3>
+    <textarea name="Comments" id="Text" ">Comments</textarea>
+    <br>
+    <br>
+  
+<input type="Submit" value="Submit">
+</form>
+</html>
