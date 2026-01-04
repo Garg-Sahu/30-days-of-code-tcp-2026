@@ -1,0 +1,186 @@
+/* ==========================
+   CSS VARIABLES
+========================== */
+:root {
+    --primary: #ff4d8d;
+    --dark: #111;
+    --light: #f5f5f5;
+    --text: #333;
+}
+
+/* ==========================
+   RESET
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ==========================
+   HEADER
+========================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--dark);
+}
+
+.logo {
+    color: var(--primary);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: var(--light);
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: slideUp 1s ease forwards;
+}
+
+.hero-text {
+    margin-bottom: 2rem;
+    color: var(--text);
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: var(--primary);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ==========================
+   FEATURES
+========================== */
+.features {
+    padding: 4rem 2rem;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.feature-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: var(--light);
+    padding: 2rem;
+    width: 280px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ==========================
+   PRICING
+========================== */
+.pricing {
+    padding: 4rem 2rem;
+    background: #fafafa;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.price-card {
+    background: white;
+    padding: 2rem;
+    width: 260px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.price {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    color: var(--primary);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--dark);
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+}
